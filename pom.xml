@@ -11,6 +11,7 @@
   	<module>collinear</module>
   	<module>kdtree</module>
   	<module>percolation</module>
+    <module>wordnet</module>
   </modules>
   <dependencies>
   	<dependency>
