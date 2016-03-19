@@ -1,11 +1,32 @@
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.In;
+
 public class Outcast {
+    private WordNet wordnet;
+
     // constructor takes a WordNet object
     public Outcast(WordNet wordnet) {
+        this.wordnet = wordnet;
     }
 
     // given an array of WordNet nouns, return an outcast
     public String outcast(String[] nouns) {
-        return null;
+        int distance = 0;
+        String noun = nouns[0];
+
+        for (String noun1 : nouns) {
+            int sum = 0;
+            for (String noun2 : nouns) {
+               sum += wordnet.distance(noun1, noun2);
+            }
+
+            if (sum > distance) {
+                noun = noun1;
+                distance = sum;
+            }
+        }
+
+        return noun;
     }
 
     // see test client below

@@ -1,3 +1,4 @@
+import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
 /**
  * Percolation implementation using union/find.

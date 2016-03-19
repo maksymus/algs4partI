@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.StdDraw;
+
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.Set;
